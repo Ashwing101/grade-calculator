@@ -57,6 +57,9 @@ class GradeCalculator:
         # Let the basic calculation function take care of actually
         # calculating the percentage grade
         return GradeCalculator.calculate_course_percentage(optimistic_grades, weights)
+    
+
+
         
     @staticmethod
     def calculate_letter_grade(percentage_grade:float) -> str:
@@ -82,3 +85,16 @@ class GradeCalculator:
             return 'D'
         else:
             return 'F'
+        
+
+
+        
+    @staticmethod
+    def calculate_minimum_grade_required(current_grade:float) -> str:
+        """
+        Calculate the letter grade giving a percentage grade.
+        The cutoffs for letter grades can be found in the introductory slides
+        and in the syllabus.
+        """
+        
+      
